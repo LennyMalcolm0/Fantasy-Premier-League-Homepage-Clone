@@ -1,0 +1,805 @@
+* {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header-holder {
+    display: flex;
+    position: fixed; top: 0; left: 0;
+    height: 128px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgb(129, 129, 129);
+    background-color: white;
+}
+
+.fpl-icon {
+    position: absolute; top: -1px; left: 25px;
+    height: 125px;
+    width: 9vw;
+    background-color: white;
+    border-top-right-radius: 46%;
+}
+
+.fpl-icon img {
+    height: 120px;
+    width: 8vw;
+    position: relative; top: 5px; right: 5px;
+}
+
+.menu1 {
+    display: flex;
+    height: 70px;
+    width: 93vw;
+    justify-content: space-between;
+    background-color: rgb(54,1,60);
+    color: white;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute; top: 0; left: 7vw;
+    align-items: center;
+}
+
+.side1 {
+    display: flex;
+    position: relative; left: 50px;
+}
+
+.side2 {
+    display: flex;
+    position: relative; right: 25px;
+}
+
+.flex1 {
+    position: relative;
+    display: flex;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.line-bar {
+    width: 1px;
+    height: 22px;
+    background-color: rgb(206, 206, 206);
+}
+
+.space1 {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.space2 {
+    margin: 0 7px;
+}
+
+.block1 {
+    display: block;
+}
+
+.menu2 {
+    display: flex;
+    position: absolute; top: 65px; left: 12vw;
+    height: 58px;
+    align-items: center;
+}
+
+.fan {
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 13px;
+    font-weight: bold;
+    color: #76766f;
+    margin: 0 20px;
+    position: relative; right: 5px;
+    cursor: pointer;
+}
+
+.fanD {
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 13px;
+    font-weight: normal;
+    color: #76766f;
+    cursor: pointer;
+}
+
+#shift-down1 {
+    position: relative; top: 5px;
+}
+
+.active-line {
+    height: 5px;
+    width: 75px;
+    background-image: linear-gradient(to right, #973FF9, #A74CB2);
+    position: relative; right: 166px; top: 31px;
+}
+
+.hover-line {
+    display: none;
+    height: 5px;
+    width: 105px;
+    background-image: linear-gradient(to right, #973FF9, #A74CB2);
+    position: relative; right: 166px; top: 31px;
+}
+
+/*MAIN..........DESIGN*/
+
+.main {
+    position: absolute; top: 128px;
+    width: 100%;
+}
+
+.fpl-bimg {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+}
+
+.img1 img {
+    height: 40vh;
+    width: 100%;
+    position: relative; left: 415px;
+}
+
+.img2 img {
+    height: 40vh;
+    width: 100%;
+    position: relative; right: 880px;
+}
+
+.nav-links {
+    display: flex;
+    position: relative; bottom: 48px; left: 50px;
+}
+
+#margin2 {
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    width: 75px;
+    height: 48px;
+    background-color: white;
+    color: #37003c;
+    justify-content: center;
+    align-items: center;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.prizes {
+    display: flex;
+    width: 75px;
+    height: 48px;
+    background-color: #00FF87;
+    color: #37003c;
+    justify-content: center;
+    align-items: center;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.scout {
+    display: flex;
+    width: 75px;
+    height: 48px;
+    background-color: #00FF87;
+    color: #37003c;
+    justify-content: center;
+    align-items: center;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.podcast {
+    display: flex;
+    width: 90px;
+    height: 48px;
+    background-color: #E90052;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.help {
+    display: flex;
+    width: 75px;
+    height: 48px;
+    background-color: #00FF87;
+    color: #37003c;
+    justify-content: center;
+    align-items: center;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.stats {
+    display: flex;
+    width: 100px;
+    height: 48px;
+    background-color: #00FF87;
+    color: #37003c;
+    justify-content: center;
+    align-items: center;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.draft {
+    display: flex;
+    width: 75px;
+    height: 48px;
+    background-color: #973DFF;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.LOGIN {
+    position: relative; top: 10px;
+}
+
+.center1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details input {
+    background-color: #EFEFEF;
+    width: 300px;
+    height: 50px;
+    border: none;
+}
+
+.forgot {
+    display: flex;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 13px;
+    color: #37003c;
+    font-weight: 530;
+    width: 150px;
+    justify-content: space-between;
+    position: relative; top: 7.5px;
+    cursor: pointer;
+}
+
+.signBT {
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 21px;
+    color: #37003c;
+    font-weight: 600;
+    position: relative; top: 7.5px; right: 20px;
+}
+
+.above-input {
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 14px;
+    color: #37003c;
+    font-weight: 400;
+    position: relative; bottom: 10px;
+}
+
+.signST {
+    display: flex;
+    width: 250px;
+    height: 45px;
+    background-image: linear-gradient(to right, #00FF92, #03F1F2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 14px;
+    color: #37003c;
+    font-weight: 530;
+    position: relative; top: 7.5px;
+    cursor: pointer;
+}
+
+.input-line {
+    width: 300px;
+    height: 2px;
+    background-image: linear-gradient(to right, #00FF92, #A74CB2);
+}
+
+.center2 {
+    display: flex;
+    position: relative; top: 50px;
+    justify-content: center;
+}
+
+.or {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; right: 8px;
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 14px;
+    color: #37003c;
+    font-weight: 400;
+}
+
+.or-line {
+    width: 44.5%;
+    height: 1px;
+    background-color: #9d9d9d;
+}
+
+.center3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative; top: 80px;
+}
+
+.icon-h1  {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+#social-1 {
+    display: flex;
+    width: 240px;
+    height: 40px;
+    color: white;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fpl-fb {
+    background-color: #1876F3;
+}
+
+.fpl-twitter {
+    background-color: #01ADED;
+}
+
+.fpl-google {
+    display: flex;
+    width: 240px;
+    height: 40px;
+    background-color: #FFFEFE;
+    border: 0.3px solid rgb(177, 177, 177);
+    box-shadow: 1px 1px 5px rgb(151, 151, 151);
+    color: #010100;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fpl-apple {
+    background-color: #010100;
+}
+
+.icon-h1 img {
+    position: relative; left: 40px;
+}
+
+.icon-text {
+    position: relative; right: 40px;
+}
+
+#fff {
+    position: relative; right: 30px;
+}
+
+.Guide {
+    position: absolute; top: 550px;
+}
+
+.part1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.img-bg2 {
+    display: flex;
+    width: 1200px;
+    height: 120px;
+    background-color: #36003D;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    position: relative; left: 73px;
+}
+
+.guide-icon {
+    position: relative; left: 20px;
+}
+
+.guide-th {
+    color: #00FF87;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.guide-ts {
+    width: 550px;
+    margin-top: 15px;
+    color: white;
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.signST2 {
+    position: relative; right: 25px;
+    display: flex;
+    width: 250px;
+    height: 45px;
+    background-image: linear-gradient(to right, #00FF92, #03F1F2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 14px;
+    color: #37003c;
+    font-weight: 530;
+    cursor: pointer;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.part2 {
+    display: flex;
+    height: 270px;
+    width: 100%;
+    position: relative; top: 40px;
+}
+
+.center5 {
+    display: flex;
+    width: 1204px;
+    justify-content: space-between;
+    position: absolute; left: 72px;
+}
+
+.phase {
+    display: flex;
+}
+
+.phase-text {
+    background-image: linear-gradient(to bottom left, #05ECFE, #40A2FF);
+    height: 242px;
+    width: 250px;
+}
+
+.img-color {
+    background-color: #EAEBE7;
+    height: 242px;
+}
+
+.phase-th {
+    color: #37003c;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.phase-ts {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.6;
+    color: #37003c;
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 14px;
+}
+
+.last-session {
+    position: absolute; top: 985px; left: 0; right: 0;
+    width: 100%;
+}
+
+.latest {
+    color: #37003c;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative; left: 83px;
+}
+
+.center6 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.analysis {
+    display: flex;
+    width: 1204px;
+    height: 400px;
+    background-image: linear-gradient(to right, #02EEFE, #01FF89);
+    position: relative; top: 10px;
+    cursor: pointer;
+}
+
+.a-img {
+    width: 554.89;
+    height: 370px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.analysis-text {
+    width: 590px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.analysis-th {
+    color: #37003c;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.analysis-ts1 {
+    color: #37003c;
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.analysis-ts2 {
+    color: #37003c;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.analysis:hover img {
+    scale: 1.1;
+    transition: ease-in-out 0.4s;
+}
+
+.analysis:hover .analysis-th {
+    text-decoration: underline;
+}
+
+.line-gradient {
+    position: relative; top: 50px;
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right, #963CFE, #FF2882);
+}
+
+.sponsor {
+    display: flex;
+    position: relative; top: 60px;
+    width: 100%;
+    height: 160px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sponsor-text {
+    color: #76766f;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute; bottom: 0;
+}
+
+#sponsor-holder {
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+#ea-sport {
+    display: flex;
+    width: 75px;
+    justify-content: center;
+}
+
+#barclay {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
+#budweiser {
+    display: flex;
+    width: 130px;
+    justify-content: center;
+}
+
+#castrol {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
+.cas-img {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
+#hublot {
+    display: flex;
+    width: 130px;
+    justify-content: center;
+}
+
+.nike-img {
+    position: relative; top: 10px;
+}
+
+#nike {
+    display: flex;
+    width: 120px;
+    justify-content: center;
+}
+
+#oracle {
+    display: flex;
+    width: 140px;
+    justify-content: center;
+}
+
+#avery-D {
+    display: flex;
+    width: 135px;
+    justify-content: center;
+}
+
+#panini {
+    display: flex;
+    width: 120px;
+    justify-content: center;
+}
+
+#sponsor-holder:hover .sponsor-text {
+    text-decoration: underline;
+}
+
+footer {
+    position: relative; top: 1210px;
+}
+
+.footer1-background {
+    display: flex;
+    background-image: linear-gradient(to bottom, #36013C, #36013C, #36013C, #36013C, #790D52);
+    height: 450px;
+    width: 100%;
+    align-items: center;
+}
+
+.align1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#H-design {
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+#content {
+    display: flex;
+    margin-top: 18px;
+}
+
+.content-design {
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 14px;
+    color: white;
+}
+
+.col-2 {
+    margin-left: 35px;
+}
+
+.content-text {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.content-text:hover {
+    color: #ff2882;
+}
+
+.footer2 {
+    height: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-start {
+    color: #37003c;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 11px;
+}
+
+.f-mid {
+    color: #242424;
+    font-family: "PremierSans-Regular", Arial;
+    font-size: 11px;
+    margin-right: 380px;
+}
+
+.f-end {
+    display: flex;
+    color: #37003c;
+    font-family: "PremierSans-Bold", Arial;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    cursor: pointer;
+}
+
+.f-end img {
+    height: 35px;
+    width: auto;
+}
+
+#f-prem {
+    margin-right: 5px;
+}
+
+#f-lg {
+    margin-left: 5px;
+}
