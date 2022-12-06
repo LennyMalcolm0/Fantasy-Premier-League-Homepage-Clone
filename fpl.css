@@ -117,17 +117,10 @@ body {
     position: relative; right: 166px; top: 31px;
 }
 
-.hover-line {
-    display: none;
-    height: 5px;
-    width: 105px;
-    background-image: linear-gradient(to right, #973FF9, #A74CB2);
-    position: relative; right: 166px; top: 31px;
-}
 
 /*MAIN..........DESIGN*/
 
-.main {
+main {
     position: absolute; top: 128px;
     width: 100%;
 }
